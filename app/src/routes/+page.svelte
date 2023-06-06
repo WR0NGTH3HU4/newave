@@ -5,16 +5,38 @@
            <h1 class="title">Üdvözöllek a Newave oldalán!</h1>
         </div>
     </section>
+
     <section id="leirasok">
         <div class="not-flex divider">
-           
+
         </div>
         <div>
             <div class="feature">
                 <h2>Híreink</h2>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, quibusdam magnam obcaecati aliquid iusto eveniet ut qui omnis accusantium neque praesentium impedit illum placeat vitae ullam eius. Asperiores, nam harum!</span>
-                <br>
-               <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro qui error impedit maiores mollitia non voluptates quos unde, in quo esse fugiat nostrum tempora aspernatur illum corporis laboriosam illo. Nobis?</span>
+               <table>
+                <tr>
+                    <th>HÍR 1</th>
+                    <th>HÍR 2</th>
+                    <th>HÍR 3</th>
+                    <th>HÍR 4</th>
+
+                </tr>
+                <tr>
+                    <td>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, numquam cum veritatis ipsam atque dolore quidem sit repellat voluptatibus quam beatae, enim eos aperiam corrupti doloremque? Quisquam consequuntur repellendus quas.
+                    </td>
+                    <td>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt cum ducimus pariatur? Ipsam reiciendis minus amet placeat cum, sint vero, eligendi impedit dolor quo nostrum, aperiam quis voluptatem asperiores illum!
+                    </td>
+                    <td>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, numquam cum veritatis ipsam atque dolore quidem sit repellat voluptatibus quam beatae, enim eos aperiam corrupti doloremque? Quisquam consequuntur repellendus quas.
+                    </td>
+                    <td>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt cum ducimus pariatur? Ipsam reiciendis minus amet placeat cum, sint vero, eligendi impedit dolor quo nostrum, aperiam quis voluptatem asperiores illum!
+                    </td>
+                </tr>
+               </table>
+
                <a href="hirek" class="button" >TOVÁBBI HÍREINK!</a>
             </div>
         <div class="not-flex divider">
@@ -23,17 +45,28 @@
     </section>
     <section id="teszt">
         <div class="feature">
-            <h2>Előadóink:</h2>
-            <span>YUNG ALVIN</span>
-            <span>GREEN HEART</span>
-            <span>ZSARNOWSZKY CSABA</span>
-            <span>ZAZI</span>
-            <span>FATTY</span>
-            <span>M-SHEY</span>
-            <span>PEETY</span>
-            <span>VAKAY</span>
-            <span>YUNG FILI</span>
+            <h2 id="eloadoink_cim">Előadóink</h2>
+            <table id="eloadok">
+             <tr>
+                <th>YUNG ALVIN</th>
 
+                <th>GREEN HEART</th>
+
+                <th>ZSARNOWSZKY CSABA </th>
+
+                <th>ZAZI</th>
+
+                <th>FATTY</th>
+
+                <th>M-SHEY</th>
+
+                <th>PEETY</th>
+
+                <th>VAKAY</th>
+
+                <th>YUNG FILI</th>
+            </tr>
+            </table>
         </div>
         <div id="question-wrapper">
 
@@ -42,7 +75,7 @@
     </section>
   
         <footer>
-            <p>&copy; 2023 Newave. Minden jog fenntartva.</p>
+            <p>&copy; 2023 Newave. Minden jog fenntartva. Website and design by: <a href="https://linktr.ee/wr0ngth3hu4" style="text-decoration: none; color: inherit;">wr0ngth3hu4</a></p>
         </footer>
 
 </main>
@@ -104,6 +137,8 @@
 
     section:nth-child(even) {
         justify-content: space-between;
+        background-color:white;
+        color: black;
 
         & > div:not(.not-flex) {
             padding: 1rem;
@@ -266,15 +301,11 @@
     height: 20%;
   }
 
-  .nyil{
-    width: 20%;
-    height: 20%;
+  table{
+    padding: 50%;
   }
+  th{
+    padding: 5px;
+  }
+
 </style>
-
-<script lang="ts">
-	import { fly } from "svelte/transition";
-	import NagyonMenoTransition from "../components/NagyonMenoTransition.svelte";
-
-    let modalShown = false;
-</script>
