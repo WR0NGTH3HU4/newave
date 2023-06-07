@@ -46,6 +46,38 @@
     <section id="teszt">
         <div class="feature">
             <h2 id="eloadoink_cim">Előadóink</h2>
+
+        <div class="nagydiv">
+            <div class="ceodiv">
+                <ul>
+                    <li class="rectangle" id="ceo">YUNG ALVIN</li>
+                </ul>
+            </div>
+        
+                <div>
+                <ul>
+                  <li class="rectangle">GREEN HEART</li>
+                  <li class="rectangle">ZSARNOWSZKY CSABA </li>
+                  <li class="rectangle">ZAZI</li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li class="rectangle">FATTY</li>
+                  <li class="rectangle">M-SHEY</li>
+                  <li class="rectangle">PEETY</li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li class="rectangle">MERKEL</li>
+                  <li class="rectangle">YUNG FILI</li>
+                  <li class="rectangle">CUNDRAC</li>
+                </ul>
+              </div>
+        </div>
+        </div>
+        <!--
             <table id="eloadok">
              <tr>
                 <th>YUNG ALVIN</th>
@@ -67,10 +99,7 @@
                 <th>YUNG FILI</th>
             </tr>
             </table>
-        </div>
-        <div id="question-wrapper">
-
-        </div>
+            -->
 
     </section>
   
@@ -159,17 +188,18 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
 
         h2 {
-            font-size: 2rem;
-            font-weight: 700;
+            font-size: 4rem;
+            align-self: center;
             margin-bottom: 0.5rem;
+            
         }
     }
 
     #leirasok > div {
-        justify-content: space-evenly;
+        
         align-items: center;
 
         & > * {
@@ -208,12 +238,9 @@
 
     #teszt {
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
 
-        & > * {
-            flex-basis: 40%;
-        }
 
         #question-wrapper {
             display: flex;
@@ -307,5 +334,34 @@
   th{
     padding: 5px;
   }
+  .rectangle {
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+    background-color: #01ffcb;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 80px;
+    color: black;
+}
+.negyzetek{
+    width: 100%;
+}
+
+.ceodiv{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: row;
+}
+
+.nagydiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 </style>
