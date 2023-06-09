@@ -1,48 +1,40 @@
 <main>
     <section>
         <div class="back">
-           <img src="logo/logo_feher.png" alt="newave_logo">
+           <img src="logo/logo_feher.png" alt="newave_logo" class="logo">
            <h1 class="title">Üdvözöllek a Newave oldalán!</h1>
         </div>
     </section>
 
-    <section id="leirasok">
-        <div class="not-flex divider">
-
-        </div>
-        <div>
-            <div class="feature">
+    <section id="teszt">
+        <div class="feature">
+            <div class="feature" id="hirek">
                 <h2>Híreink</h2>
-               <table>
-                <tr>
-                    <th>HÍR 1</th>
-                    <th>HÍR 2</th>
-                    <th>HÍR 3</th>
-                    <th>HÍR 4</th>
-
-                </tr>
-                <tr>
-                    <td>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, numquam cum veritatis ipsam atque dolore quidem sit repellat voluptatibus quam beatae, enim eos aperiam corrupti doloremque? Quisquam consequuntur repellendus quas.
-                    </td>
-                    <td>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt cum ducimus pariatur? Ipsam reiciendis minus amet placeat cum, sint vero, eligendi impedit dolor quo nostrum, aperiam quis voluptatem asperiores illum!
-                    </td>
-                    <td>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, numquam cum veritatis ipsam atque dolore quidem sit repellat voluptatibus quam beatae, enim eos aperiam corrupti doloremque? Quisquam consequuntur repellendus quas.
-                    </td>
-                    <td>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt cum ducimus pariatur? Ipsam reiciendis minus amet placeat cum, sint vero, eligendi impedit dolor quo nostrum, aperiam quis voluptatem asperiores illum!
-                    </td>
-                </tr>
-               </table>
-
+                
+                <div class="hirek_container">
+                    <div class="box">
+                      <img src="tagok/yung_alvin.png" alt="Bal oldali kép">
+                      <p>HÍR 1</p>
+                    </div>
+                    <div class="box">
+                      <img src="tagok/yung_alvin.png" alt ="Bal oldali kép">
+                      <p>HÍR 2</p>
+                    </div>
+                    <div class="box">
+                      <img src="tagok/yung_alvin.png" alt="Bal oldali kép">
+                      <p>HÍR 3</p>
+                    </div>
+                  </div>
+                  
                <a href="hirek" class="button" >TOVÁBBI HÍREINK!</a>
             </div>
-        <div class="not-flex divider">
-           
+            <div class="not-flex divider">
+
+            </div>
         </div>
     </section>
+
+
     <section id="teszt">
         <div class="feature">
             <h2 id="eloadoink_cim">Előadóink</h2>
@@ -50,7 +42,9 @@
         <div class="nagydiv">
             <div class="ceodiv">
                 <ul>
-                    <li class="rectangle" id="ceo">YUNG ALVIN</li>
+                    <li class="rectangle">
+                        YUNG ALVIN
+                    </li>
                 </ul>
             </div>
         
@@ -77,34 +71,10 @@
               </div>
         </div>
         </div>
-        <!--
-            <table id="eloadok">
-             <tr>
-                <th>YUNG ALVIN</th>
-
-                <th>GREEN HEART</th>
-
-                <th>ZSARNOWSZKY CSABA </th>
-
-                <th>ZAZI</th>
-
-                <th>FATTY</th>
-
-                <th>M-SHEY</th>
-
-                <th>PEETY</th>
-
-                <th>VAKAY</th>
-
-                <th>YUNG FILI</th>
-            </tr>
-            </table>
-            -->
-
     </section>
   
         <footer>
-            <p>&copy; 2023 Newave. Minden jog fenntartva. Website and design by: <a href="https://linktr.ee/wr0ngth3hu4" style="text-decoration: none; color: inherit;">wr0ngth3hu4</a></p>
+            <p>&copy; 2023 Newave. Minden jog fenntartva. Website and design by: <a href="https://linktr.ee/wr0ngth3hu4" style="color: inherit;">wr0ngth3hu4</a></p>
         </footer>
 
 </main>
@@ -184,7 +154,7 @@
         }
     }
 
-    .feature {
+    .feature, .hirek {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -236,25 +206,6 @@
         }
     }
 
-    #teszt {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-
-        #question-wrapper {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            max-height: 250px;
-
-            & > img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
-
     section:nth-child(4) {
         display: flex;
         flex-direction: column;
@@ -298,7 +249,7 @@
     .button {
         display: inline-block;
         color: white;
-        background-color: var(--2);
+        background-color: #023436;
         font-weight: 600;
         transition-property: transform background-color;
         transition-duration: .3s;
@@ -307,9 +258,10 @@
         text-decoration: none;
         text-align: center;
         min-width: fit-content;
+        margin-top: 15%;
         
         &:hover {
-            background-color: var(--1);
+            background-color: #086a6d;
             transition-property: transform background-color;
             transition-duration: .3s;
             transform: scale(.95);
@@ -323,7 +275,7 @@
     text-align: center;
   }
 
-  img{
+  .logo{
     width: 50%;
     height: 20%;
   }
@@ -362,6 +314,37 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.hirek_container {
+  display: flex;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+.box {
+  flex: 1;
+  background-color: #023436;
+  color: white;
+  padding: 5px;
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+  transform: skewX(-20deg); /* Átalakítás paralelogrammá */
+}
+
+.box img {
+  margin-right: 10px;
+  width: 50%; /* Képek mérete 10% */
+  transform: skewX(20deg); /* Inverz átalakítás a képnek */
+}
+
+
+.box p {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  transform: skewX(20deg); /* Inverz átalakítás a képnek */
 }
 
 </style>
