@@ -6,16 +6,15 @@
 
 <nav>
 	<span class="cim">
-		<a href="/" class="noadeco">
-			<img src="logo/logo_bolygo.png" alt="">
+		<a href="kapcsolat" class="noadeco">
+			<img src="logo/logo_bolygo.png" alt="newave_logo">
 		</a>
 	</span>
 
 	<a href="rolunk">Művészeink</a>
 	<a href="galeria">Galéria</a>
 	<a href="hirek">Hírek</a>
-	
-
+	<a href="kapcsolat">Kapcsolat</a>
 </nav>
 
 <style lang="scss">
