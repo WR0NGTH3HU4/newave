@@ -6,12 +6,12 @@
         </div>
     </section>
 
-    <div id="atmenet_le"></div>
+    <!--<div id="atmenet_le"></div>-->
 
     <section style="background-color: #fff;">
         <div class="feature">
             <div class="feature">
-                <h2 style="color: black;">Híreink</h2>
+                <h2 style="color: black;" id="hireink_cim">Híreink</h2>
                 
                 <div class="hirek_container">
                     <div class="box" id="hirek">
@@ -36,94 +36,12 @@
         </div>
     </section>
 
-    <div id="atmenet_fel"></div>
+    <!--<div id="atmenet_fel"></div>-->
 
-    <section id="teszt">
-        <div class="feature">
-            <h2 id="eloadoink_cim">Előadóink</h2>
+  
+   <!-- <div id="atmenet_le">
 
-        <div class="nagydiv">
-
-            <div class="hirek_container">
-                <div class="box" id="eloado">
-                  <img src="tagok/yung_alvin.png" alt="Bal oldali kép">
-                  <p class="eloado_nevek">GREEN HEART</p>
-                </div>
-                <div class="box" id="eloado">
-                  <img src="tagok/yung_alvin.png" alt ="Bal oldali kép">
-                  <p class="eloado_nevek">ZSARNOWSZKY CSABA</p>
-                </div>
-                <div class="box" id="eloado">
-                  <img src="tagok/yung_alvin.png" alt="Bal oldali kép">
-                  <p class="eloado_nevek">ZAZI</p>
-                </div>
-              </div>
-
-              <div class="hirek_container">
-                <div class="box" id="eloado">
-                  <img src="tagok/yung_alvin.png" alt="Bal oldali kép">
-                  <p class="eloado_nevek">FATTY</p>
-                </div>
-                <div class="box" id="eloado">
-                  <img src="tagok/yung_alvin.png" alt ="Bal oldali kép">
-                  <p class="eloado_nevek">M-SHEY</p>
-                </div>
-                <div class="box" id="eloado">
-                  <img src="tagok/yung_alvin.png" alt="Bal oldali kép">
-                  <p class="eloado_nevek">PEETY</p>
-                </div>
-              </div>
-
-              <div class="hirek_container">
-                <div class="box" id="eloado">
-                  <img src="tagok/yung_alvin.png" alt="Bal oldali kép">
-                  <p class="eloado_nevek">MERKEL</p>
-                </div>
-                <div class="box" id="eloado">
-                  <img src="tagok/yung_alvin.png" alt ="Bal oldali kép">
-                  <p class="eloado_nevek">YUNG FILI</p>
-                </div>
-                <div class="box" id="eloado">
-                  <img src="tagok/yung_alvin.png" alt="Bal oldali kép">
-                  <p class="eloado_nevek">CUNDRAC</p>
-                </div>
-              </div>
-
-               <!-- <ul>
-                    <li class="rectangle">
-                        YUNG ALVIN
-                    </li>
-                </ul>
-            </div>
-        
-                <div>
-                <ul>
-                  <li class="rectangle">GREEN HEART</li>
-                  <li class="rectangle">ZSARNOWSZKY CSABA </li>
-                  <li class="rectangle">ZAZI</li>
-                </ul>
-              </div>
-              <div>
-                <ul>
-                  <li class="rectangle">FATTY</li>
-                  <li class="rectangle">M-SHEY</li>
-                  <li class="rectangle">PEETY</li>
-                </ul>
-              </div>
-              <div>
-                <ul>
-                  <li class="rectangle">MERKEL</li>
-                  <li class="rectangle">YUNG FILI</li>
-                  <li class="rectangle">CUNDRAC</li>
-                </ul>
-              </div>
-        </div>
-        -->
-        </div>
-    </section>
-    <div id="atmenet_le">
-
-    </div>
+    </div>-->
         <footer>
             <p>&copy; 2023 Newave. Minden jog fenntartva. Website and design by: <a href="https://linktr.ee/wr0ngth3hu4" style="color: inherit;">wr0ngth3hu4</a></p>
         </footer>
@@ -325,8 +243,8 @@
     }
 
     footer {
-    background-color: #fff;
-    color: black;
+    background-color: #023436;
+    color: white;
     padding: 20px;
     text-align: center;
   }
@@ -370,6 +288,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .hirek_container {
@@ -411,26 +330,29 @@
     margin-top: 5%;
     font-size: x-large;
 }
-.eloado_nevek{
-    color: black;
-    text-decoration: underline;
-}
+
 
 #atmenet_le{
     background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(2,52,54,1) 100%);
-    height: 200px;
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(2,52,54,1) 100%);
+    height: 100px;
 
 }
 #atmenet_fel{
     background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(2,52,54,1) 100%);
-    height: 200px;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(2,52,54,1) 100%);
+    height: 100px;
 
 }
 
 .hirek_div{
     background-color: #fff;
 }
+#eloadoink_cim{
+  margin-top: 40px;
+}
 
+#hireink_cim{
+  margin-top: 40px;
+}
 </style>

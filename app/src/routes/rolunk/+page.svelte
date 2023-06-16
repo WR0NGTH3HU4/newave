@@ -1,48 +1,374 @@
-<main>
-    <section class="main">
-        <ClickerGenerator elemShape="circle" shapes="{shapes}" on:shapeClick={shapeClick} />
+<main style="font-family: MyCostumFont;">
+    
+<section>
+    <section id="teszt">
+        <div class="feature">
+            <h2 id="eloadoink_cim">Előadóink</h2>
+
+        <div class="nagydiv">
+
+            <div class="hirek_container">
+                <div class="box" id="eloado">
+                  <img src="tagok/yung_alvin.png" alt="Bal oldali kép">
+                  <p class="eloado_nevek"><a href="green_heart" style="color:black">GREEN HEART</a></p>
+                </div>
+                <div class="box" id="eloado">
+                  <img src="tagok/yung_alvin.png" alt ="Bal oldali kép">
+                  <p class="eloado_nevek"><a href="" style="color:black">ZSARNOWSZKY CSABA</a></p>
+                </div>
+                <div class="box" id="eloado">
+                  <img src="tagok/yung_alvin.png" alt="Bal oldali kép">
+                  <p class="eloado_nevek"><a href="" style="color:black">ZAZI</a></p>
+                </div>
+              </div>
+
+              <div class="hirek_container">
+                <div class="box" id="eloado">
+                  <img src="tagok/yung_alvin.png" alt="Bal oldali kép">
+                  <p class="eloado_nevek"><a href="" style="color:black">FATTY</a></p>
+                </div>
+                <div class="box" id="eloado">
+                  <img src="tagok/yung_alvin.png" alt ="Bal oldali kép">
+                  <p class="eloado_nevek"><a href="" style="color:black">M-SHEY</a></p>
+                </div>
+                <div class="box" id="eloado">
+                  <img src="tagok/yung_alvin.png" alt="Bal oldali kép">
+                  <p class="eloado_nevek"><a href="" style="color:black">PEETY</a></p>
+                </div>
+              </div>
+
+              <div class="hirek_container">
+                <div class="box" id="eloado">
+                  <img src="tagok/yung_alvin.png" alt="Bal oldali kép">
+                  <p class="eloado_nevek"><a href="" style="color:black">MERKEL</a></p>
+                </div>
+                <div class="box" id="eloado">
+                  <img src="tagok/yung_alvin.png" alt ="Bal oldali kép">
+                  <p class="eloado_nevek"><a href="" style="color:black">YUNG FILI</a></p>
+                </div>
+                <div class="box" id="eloado">
+                  <img src="tagok/yung_alvin.png" alt="Bal oldali kép">
+                  <p class="eloado_nevek"><a href="" style="color:black">CUNDRAC</a></p>
+                </div>
+              </div>
+
+        </div>
     </section>
-    <section class="wavy">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="var(--1)" fill-opacity="1" d="M0,32L26.7,48C53.3,64,107,96,160,128C213.3,160,267,192,320,176C373.3,160,427,96,480,112C533.3,128,587,224,640,261.3C693.3,299,747,277,800,224C853.3,171,907,85,960,53.3C1013.3,21,1067,43,1120,80C1173.3,117,1227,171,1280,176C1333.3,181,1387,139,1413,117.3L1440,96L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path>
-            <path fill="var(--0)" fill-opacity="1" d="M0,288L26.7,245.3C53.3,203,107,117,160,112C213.3,107,267,181,320,218.7C373.3,256,427,256,480,245.3C533.3,235,587,213,640,176C693.3,139,747,85,800,74.7C853.3,64,907,96,960,122.7C1013.3,149,1067,171,1120,197.3C1173.3,224,1227,256,1280,256C1333.3,256,1387,224,1413,208L1440,192L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path>
-        </svg>
-        <ProfileDisplay profiles={rolunk} selected={selectedProfileIndex}/>
-    </section>
+</section>
+<footer>
+    <p>&copy; 2023 Newave. Minden jog fenntartva. Website and design by: <a href="https://linktr.ee/wr0ngth3hu4" style="color: inherit;">wr0ngth3hu4</a></p>
+</footer>
 </main>
 
 <style lang="scss">
-    @import '../../scss/palette.scss';
+
+    @font-face{
+        font-family: "MyCustomFont";
+        src: url("app/AvenirLTStd-Roman.otf");
+    }
+
+    #leirasok > .divider {
+        height: fit-content;
+
+        svg {
+            vertical-align: middle;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .front {
+            .title {
+                font-size: 1.5rem !important;
+                width: 90vw !important;
+            }
+
+            a {
+                width: 60vw !important;
+            }
+        }
+
+        #leirasok > div {
+            flex-direction: column !important;
+            gap: 1rem;
+
+            & > * {
+                flex-basis: auto !important;
+            }
+
+            .button {
+                max-width: 100% !important;
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+
+        #veg > div {
+            width: auto;
+        }
+    }
 
     section {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
+        max-width: 100%;
     }
 
     section:nth-child(odd) {
-        background-color: var(--0);
+        background-color: #023436;
         color: white;
         padding: 1rem;
     }
 
-    .main {
-        justify-content: center;
-    }
+    section:nth-child(even) {
+        justify-content: space-between;
+        background-color:white;
+        color: black;
 
-    .main > *:first-child {
-        flex: 1;
-    }
-
-    .wavy {
-        flex: 1;
-
-        & > :global(*:nth-child(2)) {
-            justify-self: center;
-            align-self: center;
-            margin: auto;
+        & > div:not(.not-flex) {
+            padding: 1rem;
         }
     }
+
+    section:nth-child(1) {
+        display: grid;
+        align-items: center;
+
+        & > * {
+            grid-column: 1;
+            grid-row: 1;
+        }
+    }
+
+    .feature, .hirek {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 4rem;
+            align-self: center;
+            margin-bottom: 0.5rem;
+            
+        }
+    }
+
+    #leirasok > div {
+        
+        align-items: center;
+
+        & > * {
+            flex-grow: 0;   
+        }
+
+        .button {
+            max-width: 10rem;
+            max-height: 4rem;
+        }
+    }
+
+    #leirasok > div:not(.not-flex) {
+        display: flex;
+        flex-direction: row;
+        padding: 0 3rem;
+
+        & > * {
+            flex-basis: 50%;
+        }
+    }
+
+    #leirasok > div:nth-child(2) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+        gap: 1rem;
+
+        .feature {
+            align-items: center;
+        }
+    }
+
+    section:nth-child(4) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & > div {
+            width: 50%;
+        }
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .back {
+        @extend .center;
+        z-index: 0;
+
+        & > svg {
+            
+            height: 60vw;
+            width: 60vw;
+        }
+    }
+
+    .front {
+        @extend .center;
+        z-index: 1;
+        gap: .5rem;
+
+        .title {
+            width: 50vw;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+
+    .button {
+        display: inline-block;
+        color: white;
+        background-color: #023436;
+        font-weight: 600;
+        transition-property: transform background-color;
+        transition-duration: .3s;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        text-align: center;
+        min-width: fit-content;
+        margin-top: 15%;
+        
+        &:hover {
+            background-color: #086a6d;
+            transition-property: transform background-color;
+            transition-duration: .3s;
+            transform: scale(.95);
+        }
+    }
+
+    footer {
+    background-color: #023436;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .logo{
+    width: 50%;
+    height: 20%;
+  }
+
+  table{
+    padding: 50%;
+  }
+  th{
+    padding: 5px;
+  }
+  .rectangle {
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+    background-color: #01ffcb;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 80px;
+    color: black;
+}
+.negyzetek{
+    width: 100%;
+}
+
+.ceodiv{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: row;
+}
+
+.nagydiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hirek_container {
+  display: flex;
+  margin-left: 5%;
+}
+
+#hirek{
+    margin-top: 10%;
+}
+
+.box {
+  flex: 1;
+  background-color: #023436;
+  color: white;
+  padding: 5px;
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+  transform: skewX(-20deg); 
+}
+
+.box img {
+  margin-right: 10px;
+  width: 50%; 
+  transform: skewX(20deg); 
+}
+
+
+.box p {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  transform: skewX(20deg); 
+  font-size: x-large;
+}
+#eloado{
+    background-color: #01ffcb;
+    margin-top: 5%;
+    font-size: x-large;
+}
+
+
+#atmenet_le{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(2,52,54,1) 100%);
+    height: 100px;
+
+}
+#atmenet_fel{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(2,52,54,1) 100%);
+    height: 100px;
+
+}
+
+.hirek_div{
+    background-color: #fff;
+}
+#eloadoink_cim{
+  margin-top: 40px;
+  text-decoration: underline;
+
+}
+
+#hireink_cim{
+  margin-top: 40px;
+}
 </style>
 
 <script lang="ts">

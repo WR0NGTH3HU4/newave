@@ -6,7 +6,7 @@
 
 <nav>
 	<span class="cim">
-		<a href="kapcsolat" class="noadeco">
+		<a href="/" class="noadeco">
 			<img src="logo/logo_bolygo.png" alt="newave_logo">
 		</a>
 	</span>
