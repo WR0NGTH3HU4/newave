@@ -6,8 +6,6 @@
         </div>
     </section>
 
-    <!--<div id="atmenet_le"></div>-->
-
     <section style="background-color: #fff;">
         <div class="feature">
             <div class="feature">
@@ -36,12 +34,6 @@
         </div>
     </section>
 
-    <!--<div id="atmenet_fel"></div>-->
-
-  
-   <!-- <div id="atmenet_le">
-
-    </div>-->
         <footer>
             <p>&copy; 2023 Newave. Minden jog fenntartva. Website and design by: <a href="https://linktr.ee/wr0ngth3hu4" style="color: inherit;">wr0ngth3hu4</a></p>
         </footer>
@@ -63,7 +55,7 @@
         }
     }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 300px) {
         .front {
             .title {
                 font-size: 1.5rem !important;
@@ -260,36 +252,8 @@
   th{
     padding: 5px;
   }
-  .rectangle {
-    display: inline-block;
-    width: 200px;
-    height: 80px;
-    background-color: #01ffcb;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    line-height: 80px;
-    color: black;
-}
-.negyzetek{
-    width: 100%;
-}
 
-.ceodiv{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    flex-direction: row;
-}
-
-.nagydiv{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
+//híreknél az a 3
 
 .hirek_container {
   display: flex;
@@ -317,7 +281,6 @@
   transform: skewX(20deg); 
 }
 
-
 .box p {
   margin: 0;
   flex: 1;
@@ -325,31 +288,9 @@
   transform: skewX(20deg); 
   font-size: x-large;
 }
-#eloado{
-    background-color: #01ffcb;
-    margin-top: 5%;
-    font-size: x-large;
-}
-
-
-#atmenet_le{
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(2,52,54,1) 100%);
-    height: 100px;
-
-}
-#atmenet_fel{
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(2,52,54,1) 100%);
-    height: 100px;
-
-}
 
 .hirek_div{
     background-color: #fff;
-}
-#eloadoink_cim{
-  margin-top: 40px;
 }
 
 #hireink_cim{

@@ -15,11 +15,11 @@
 
     <section id="teszt">
         <div class="feature">
-            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem suscipit vero unde! Cum ipsum eum, cumque natus, magni architecto fugit adipisci quis iure dolores officia tenetur et, soluta facilis nostrum!</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis iusto, in, eos maiores doloribus nemo aliquid illo dolorum accusantium cupiditate excepturi quisquam praesentium exercitationem libero recusandae commodi expedita nostrum quas.</span>
+            <p>ide jöhetne valami videó</p>
         </div>
         <div id="question-wrapper">
-            <p>ide jöhetne valami videó</p>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem suscipit vero unde! Cum ipsum eum, cumque natus, magni architecto fugit adipisci quis iure dolores officia tenetur et, soluta facilis nostrum!</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis iusto, in, eos maiores doloribus nemo aliquid illo dolorum accusantium cupiditate excepturi quisquam praesentium exercitationem libero recusandae commodi expedita nostrum quas.</span>
         </div>
     </section>
 
