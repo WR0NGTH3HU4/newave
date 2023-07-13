@@ -24,7 +24,7 @@
   
   <nav>
 	<div class="logo">
-	  <img src="logo/logo_bolygo.png" alt="newave_logo">
+	  <img src="logo/logo_feher.png" alt="newave_logo">
 	</div>
   
 	<div class="menu" class:show={showMenu}>
@@ -37,11 +37,10 @@
   
   <style>
 	nav {
-	  display: flex;
-	  justify-content: space-between;
-	  align-items: center;
-	  padding: 10px;
-	  background-color: #023436;
+		display: flex;
+		align-items: center;
+		padding: 10px;
+		background-color: #252525;
 	}
   
 	.logo {
@@ -58,6 +57,9 @@
 	.menu {
 	  display: flex;
 	  gap: 10px;
+	  float: center;
+	  flex-grow: 1; /* hozzáadott sor */
+	  justify-content: center; /* hozzáadott sor */
 	}
   
 	.menu a {

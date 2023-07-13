@@ -95,7 +95,7 @@
     }
 
     section:nth-child(odd) {
-        background-color: #023436;
+        background-color: #252525;
         color: white;
         padding: 1rem;
     }
@@ -215,7 +215,7 @@
     .button {
         display: inline-block;
         color: white;
-        background-color: #023436;
+        background-color: #252525;
         font-weight: 600;
         transition-property: transform background-color;
         transition-duration: .3s;
@@ -227,7 +227,7 @@
         margin-top: 15%;
         
         &:hover {
-            background-color: #086a6d;
+            background-color: #373636;
             transition-property: transform background-color;
             transition-duration: .3s;
             transform: scale(.95);
@@ -235,7 +235,7 @@
     }
 
     footer {
-    background-color: #023436;
+    background-color: #252525;
     color: white;
     padding: 20px;
     text-align: center;
@@ -266,7 +266,7 @@
 
 .box {
   flex: 1;
-  background-color: #023436;
+  background-color: #252525;
   color: white;
   padding: 5px;
   margin-right: 5%;
